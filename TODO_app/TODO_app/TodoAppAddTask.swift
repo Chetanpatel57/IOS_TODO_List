@@ -17,9 +17,9 @@ class TodoAppAddTask : UIViewController{
     @IBOutlet weak var todoTaskText: UITextField!
     
     @IBAction func doneButtonpressed(_ sender: Any) {
-        if (self.todoTaskText.text != nil), !self.todoTaskText.text!.isEmpty{
-            self.delegate?.getData(data: <#T##String#>)
-        }
+//        if (self.todoTaskText.text != nil), !self.todoTaskText.text!.isEmpty{
+//            self.delegate?.getData(data: <#T##String#>)
+//        }
         
         self.delegate?.getData(data: todoTaskText.text!)
         self.dismiss(animated: true, completion: nil )
